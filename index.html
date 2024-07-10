@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/app.js"></script>
+    <title>Travel NZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+</head>
+<body>
+    <header class="relative">
+        <img class="object-cover" src="images/home-background.jpg" alt="header-image">
+        <nav class="absolute z-20 top-0 p-4 w-full flex justify-between">
+            <h1 class="text-xl text-white font-bold drop-shadow-md">Travel NZ</h1>
+            <ul class="hidden sm:flex text-white text-sm space-x-4">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <button id="hamburger" class="sm:hidden hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+        <div id="menu" class="hidden absolute z-10 top-0 right-0 left-0 bottom-0 bg-teal-600">
+            <ul class="flex flex-col items-center mt-20 text-white space-y-4 text-2xl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="absolute top-0 w-full h-full flex flex-col justify-center items-center">
+            <h1 class="text-lg text-white drop-shadow-md">Do more with Travel NZ</h1>
+            <form action="" class="pt-4 text-sm">
+                    <div class="flex my-1 border-4 border-white rounded-2xl">
+                        <button class="flex items-center bg-white justify-center px-4">
+                            <i class="px-2 fa fa-search"></i>
+                        </button>
+                        <input type="text" class="py-1 w-40" placeholder="Where to?">
+                    </div>
+                    <div class="flex my-1 border-4 border-white rounded-2xl">
+                        <button class="flex items-center bg-white justify-center px-4">
+                            <i class="px-2 fa fa-calendar"></i>
+                        </button>
+                        <input type="text" class="py-1 w-40" placeholder="Date">
+                    </div>
+                
+                <button class="rounded-2xl bg-teal-600 px-4 mt-2 py-2 text-white">
+                    <span class="">Find Tours</span>
+                    <i class="fa fa-arrow-right mx-1" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>  
+    </header>
+    <main>
+        <!-- Booking -->
+        <section class="py-10">
+            <div class="container">
+            <h1 class="text-center font-semibold text-xl">Why book with Travel NZ ?</h1>
+            <div class="flex flex-col md:flex-row">
+                <div class="px-6">    
+                    <div class="flex p-4 flex-col items-center">
+                        <i class="text-4xl fa fa-calendar my-4"></i>
+                        <h2 class="text-lg"> Ultimate Flexibility</h2>
+                        <p class="text-sm text-center my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nemo natus officia minus perspiciatis fugit blanditiis est.
+                        </p>
+                        <button class="rounded-xl text-sm bg-teal-600 px-4 py-2 text-white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="px-6">
+                    <div class="flex p-4 flex-col items-center">
+                        <i class="text-4xl fa fa-calendar my-4"></i>
+                        <h2 class="text-lg"> Ultimate Flexibility</h2>
+                        <p class="text-sm text-center my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nemo natus officia minus perspiciatis fugit blanditiis est.
+                        </p>
+                        <button class="rounded-xl text-sm bg-teal-600 px-4 py-2 text-white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="px-6">
+                    <div class="flex p-4 flex-col items-center">
+                        <i class="text-4xl fa fa-calendar my-4"></i>
+                        <h2 class="text-lg"> Ultimate Flexibility</h2>
+                        <p class="text-sm text-center my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nemo natus officia minus perspiciatis fugit blanditiis est.
+                        </p>
+                        <button class="rounded-xl text-sm bg-teal-600 px-4 py-2 text-white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Top 10 -->
+        <section class="py-10">
+            <div class="container mx-auto">
+                <h1 class="text-center mb-6 font-semibold text-xl">Top 10 Tours in New Zealand</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-1 px-4 w-full"> 
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/hobbiton-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Hobbiton</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">North Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/taupo-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Taupo</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">North Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/wellington-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Wellington</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">North Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/taranaki-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Taranaki</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">North Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/queenstown-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Queenstown</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">South Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 rounded-lg overflow-hidden relative drop-shadow-md">  
+                        <img class="object-cover w-full h-64" src="images/wanaka-1024x768.jpg">
+                        <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+                            <div class="text-white font-semibold">
+                                <h1 class="text-lg drop-shadow-md">Explore Wanaka</h1>
+                                <h3 class="font-normal text-sm drop-shadow-md">South Island</h3>
+                            </div>
+                            <div>
+                                <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </main>
+    <footer class="bg-teal-800 py-12 text-slate-300 flex flex-col items-center">
+        <h1 class="text-xl">Travel New Zealand</h1>
+        <ul class="flex text-3xl space-x-3 mt-8">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+        <ul class="flex space-x-3 mt-8 text-sm">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

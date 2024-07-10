@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/app.js"></script>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+</head>
+<body>
+    <header class="relative">
+        <img class="object-cover" src="images/contac-us-background.jpg" alt="header-image">
+        <nav class="absolute z-20 top-0 p-4 w-full flex justify-between">
+            <h1 class="text-xl text-white font-bold drop-shadow-md">Travel NZ</h1>
+            <ul class="hidden sm:flex text-white text-sm space-x-4">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <button id="hamburger" class="sm:hidden hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+        <div id="menu" class="hidden absolute z-10 top-0 right-0 left-0 bottom-0 bg-teal-600">
+            <ul class="flex flex-col items-center mt-20 text-white space-y-4 text-2xl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="absolute top-0 w-full h-full flex flex-col justify-end p-4 items-center font-semibold">
+            <h1 class="text-lg text-white drop-shadow-md">Contact Us</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto">
+                <h1 class="text-center mb-2 mt-6 font-semibold text-3xl">Get in Touch</h1>
+                <h3 class="text-center mb-6 font-normal text-sm">We would love to help</h3>
+            </div>
+            <div class="flex flex-col sm:flex-row max-w-5xl">
+                <div>
+                    <div class="flex px-4 flex-row items-center">
+                        <i class="text-lg fa fa-phone my-2 px-4"></i>
+                        <h2 class="text-lg"> 02 487 983</h2>
+                    </div>
+                    <div class="flex px-4 flex-row items-center">
+                        <i class="text-lg fa fa-envelope-o my-2 px-4"></i>
+                        <h2 class="text-lg">hello@travelnz.co.nz</h2>
+                    </div>
+                    <div class="flex px-4 flex-row items-center">
+                        <i class="text-xl fa fa-map-marker my-2 px-5"></i>
+                        <h2 class="text-lg">55 Good Street, Auckland, NZ</h2>
+                    </div>
+                    <div class="m-8">
+                        <img class="object-cover w-full h-64" src="images/map.png">
+                    </div>
+                </div>
+                <form action="" class="flex-1 space-y-6 px-8 mb-6">
+                    <div>
+                        <label for="">
+                            <input class="w-full border border-slate-300 p-3 rounded-xl" 
+                                   type="text" 
+                                   placeholder="Name">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input class="w-full border border-slate-300 p-3 rounded-xl" 
+                                   type="email" 
+                                   placeholder="Email">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input class="w-full border border-slate-300 p-3 rounded-xl" 
+                                   type="phone" 
+                                   placeholder="Phone">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">
+                            <textarea name="message"
+                                      class="w-full border border-slate-300 p-3 rounded-xl"
+                                      id="" 
+                                      cols="30" 
+                                      rows="4"
+                                      placeholder="Your message.."
+                                      ></textarea>
+                        </label>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="rounded-lg text-sm bg-teal-600 px-4 py-2 text-white">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer class="bg-teal-800 py-12 text-slate-300 flex flex-col items-center">
+        <h1 class="text-xl">Travel New Zealand</h1>
+        <ul class="flex text-3xl space-x-3 mt-8">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+        <ul class="flex space-x-3 mt-8 text-sm">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
